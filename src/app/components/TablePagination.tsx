@@ -8,11 +8,11 @@ function TablePagination({ total }: { total: number }) {
       className="flex items-center flex-column flex-wrap md:flex-row justify-between pt-4"
       aria-label="Table navigation"
     >
-      <span className="text-sm font-normal text-gray-500 dark:text-gray-400 mb-4 md:mb-0 block w-full md:inline md:w-auto">
+      <span className="text-sm font-normal text-black mb-4 md:mb-0 block w-full md:inline md:w-auto">
         Showing
-        <span className="font-semibold text-white">1-10</span>
+        <span className="pl-1 pr-1 font-semibold text-white">1-10</span>
         of
-        <span className="font-semibold text-white">{total}</span>
+        <span className="pl-1 font-semibold text-white">{total}</span>
       </span>
       <ul className="inline-flex -space-x-px rtl:space-x-reverse text-sm h-8">
         {Array.from({ length: Math.ceil(total / 10) }, (_, index) => (
